@@ -176,6 +176,7 @@ lib LibNCurses
   fun keypad(w : Window, flag : Bool) : Result
   fun nl : Result
   fun nonl : Result
+  fun curs_set(flag : Bool) : Result
 
   # Color
   fun start_color : Result

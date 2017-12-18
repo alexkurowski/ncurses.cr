@@ -13,6 +13,10 @@ module NCurses
       check_error(LibNCurses.keypad(raw_win, enable), "keypad")
     end
 
+    def curs_set(enable)
+      check_error(LibNCurses.curs_set(enable), "curs_set")
+    end
+
     def nodelay(enable : Bool)
       check_error(LibNCurses.nodelay(raw_win, enable), "nodelay")
     end

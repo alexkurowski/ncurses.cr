@@ -74,6 +74,7 @@ module NCurses
   delegate mvhline, mvvline, to: stdscr
   delegate attron, to: stdscr
   delegate bkgd, to: stdscr
+  delegate curs_set, to: stdscr
 
   def longname
     String.new(LibNCurses.longname)
